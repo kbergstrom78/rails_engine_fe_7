@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe Merchant do
   it 'has merchant attributes' do
-    merchant = Merchant.new({id: 1, name: "Turing School"})
+    merchant_data = { id: 1, attributes: { name: "Turing School" } }
+    merchant = Merchant.new(merchant_data)
 
     expect(merchant).to be_a(Merchant)
     expect(merchant.name).to be_a(String)

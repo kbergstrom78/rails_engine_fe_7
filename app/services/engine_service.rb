@@ -7,10 +7,10 @@ class EngineService
     get_url("api/v1/merchants/#{id}")
   end
 
-  def items_by_merchant(id)
+  def merchants_items(id)
     get_url("api/v1/merchants/#{id}/items")
   end
-
+  
   private
 
   def get_url(url)

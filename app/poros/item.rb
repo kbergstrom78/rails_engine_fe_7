@@ -1,4 +1,4 @@
-class Merchant
+class Item
   attr_reader :id, :name
 
   def initialize(data)
